@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/signin_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/signin_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/signin_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btn_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"/>
+
+    <TextView
+        android:id="@+id/btn_signup_redirect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? Sign Up"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="20dp" />
+</LinearLayout>

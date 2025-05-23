@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Personal Information Display -->
+    <TextView
+        android:id="@+id/personal_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/personal_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: "
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Age and Gender Fields -->
+    <EditText
+        android:id="@+id/edit_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="Enter Age"
+        android:inputType="number"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <RadioButton
+            android:id="@+id/radio_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/radio_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+
+        <RadioButton
+            android:id="@+id/radio_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other" />
+    </RadioGroup>
+
+    <!-- Location Field -->
+    <EditText
+        android:id="@+id/edit_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="Enter Location"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <!-- Profile Image Upload Section -->
+    <Button
+        android:id="@+id/btn_get_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Get Live Location" />
+
+    <TextView
+        android:id="@+id/live_location_text"
+        android:layout_width="228dp"
+        android:layout_height="50dp"
+        android:text="Live Location"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_upload_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Upload Profile Image" />
+    <ImageView
+        android:id="@+id/profile_image_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@android:drawable/ic_menu_camera" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btn_save_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Save Details" />
+
+</LinearLayout>

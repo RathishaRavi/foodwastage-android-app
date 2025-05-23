@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:hint="Enter Phone Number"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Location will appear here"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.277"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/request_volunteer"
+        android:layout_width="197dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="20dp"
+        android:text="Request Volunteer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/location"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <ListView
+        android:id="@+id/volunteer_list"
+        android:layout_width="387dp"
+        android:layout_height="320dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/request_volunteer"
+        app:layout_constraintVertical_bias="0.345" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

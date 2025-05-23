@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textview_name"
+        android:layout_width="258dp"
+        android:layout_height="37dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Name: "
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edittext_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:inputType="text"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/edittext_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/edittext_purpose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Food name"
+        android:inputType="text"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Supplying Date and Time:"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edittext_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="Select Date"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/edittext_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="Select Time"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Food Type:"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup_food_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio_veg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vegetarian" />
+
+        <RadioButton
+            android:id="@+id/radio_nonveg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Non-Vegetarian" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Source of Supply:"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/spinner_supply_source"
+        android:layout_width="383dp"
+        android:layout_height="53dp" />
+
+    <EditText
+        android:id="@+id/edittext_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantity of food in kg"
+        android:inputType="number"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/button_donate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Donate Food" />
+
+</LinearLayout>

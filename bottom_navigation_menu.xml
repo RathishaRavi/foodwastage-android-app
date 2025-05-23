@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/dashboard"
+    android:icon="@drawable/ic_dashboard"
+    android:title="Dashboard" />
+
+<item
+    android:id="@+id/daily_food_waste"
+    android:icon="@drawable/ic_dashboard"
+    android:title="Daily Food Waste" />
+
+<item
+    android:id="@+id/food_waste_history"
+    android:icon="@drawable/ic_food_waste_history"
+    android:title="Food Waste History" />
+
+<item
+    android:id="@+id/goal_setting"
+    android:icon="@drawable/ic_goal_setting"
+    android:title="Goal Setting" />
+</menu>
